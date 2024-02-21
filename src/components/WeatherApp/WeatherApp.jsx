@@ -11,7 +11,7 @@ import humidity_icon from "../Assets/humidity.png";
 
  const WeatherApp=() => {
 
-    let api_key ="979a316b7b39539a65c54d2004d67a93";
+    let api_key =process.env.REACT_APP_API_KEY;
 
     const [wicon,setWicon] =useState(cloud_icon);
 
